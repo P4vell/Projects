@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+    font-family:'Raleway', sans-serif;
+    background-image: url('bg-mobile.png');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+}
+
+.title-section,
+.data-section {
+    background: var(--dark-blue);
+    border-radius: .6rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+}
+
+.title-section {
+    height: 12.5rem;
+    border-top-right-radius: 6.5rem;
+}
+
+.title-section__header {
+    padding-top: 1.5rem;
+}
+
+.title-section__files {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.title-section__image {
+    background: var(--very-dark-blue);
+    width: 2.9rem;
+    height: 2.9rem;
+    margin: 0 .4rem;
+    border-radius: .5rem;
+    display: grid;
+    place-items: center;
+}
+
+.title-section__image:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.data-section {
+    height: 10rem;
+    padding-right: 2.5rem;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.data-section__info {
+    margin-top: 2rem;
+    color: hsl(0, 0%, 70%);
+}
+
+.data-section__info--span {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.data-section__bar {
+    width: 100%;
+    height: 1.3rem;
+    background: var(--very-dark-blue);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.data-section__bar--inner {
+    width: 75%;
+    height: 70%;
+    background: linear-gradient(45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: absolute;
+    left: 1.5%;
+    top: 15%;
+    border-radius: 2rem;
+}
+
+.data-section__bar--inner::after {
+    content: '';
+    width: .7rem;
+    height: .7rem;
+    background: #FFFFFF;
+    position: absolute;
+    border-radius: 50%;
+    right: 1.5%;
+    top: 10%;
+}
+
+.data-section__bar::before,
+.data-section__bar::after {
+    position: absolute;
+    margin-top: 1.7rem;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.data-section__bar::before {
+    content: '0 GB';
+}
+
+.data-section__bar::after {
+    content: '1000 GB';
+    right: 0;
+}
+
+.data-section__box {
+    width: 55%;
+    height: 4rem;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    border-radius: 1rem;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-left {
+    color: var(--very-dark-blue);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.data-left__span {
+    color: var(--grayish-blue);
+    font-size: .8rem;
+    vertical-align: middle;
+    margin-left: .2rem;
+}
+
+@media (min-width: 375px) {
+    body {
+        background: var(--very-dark-blue) url('bg-desktop.png') 0% 100% no-repeat;
+        background-size: 100vw;
+    }
+}
+
+@media (min-width: 60rem) {
+    body {
+        background: var(--very-dark-blue) url('bg-desktop.png') 0% 100% no-repeat;
+        background-size: 100vw;
+        overflow: hidden;
+    }
+
+    .container {
+        grid-template-columns: 22rem 35rem;
+        grid-column-gap: 2rem;
+    }
+
+    .data-section {
+        align-self: flex-end;
+    }
+
+    .data-section__bar--inner {
+        left: .7%;
+    }
+
+    .data-section__bar--inner::after {
+        right: .7%;
+    }
+
+    .data-section__box {
+        top: -50%;
+        left: 58%;
+        width: 35%;
+        height: 4.5rem;
+        border-bottom-right-radius: 0;
+    }
+
+    .data-section__box::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 1.8rem solid #FFFFFF;
+        border-left: 1.8rem solid transparent;
+        position: absolute;
+        bottom: -27%;
+        left: 85.5%;
+    }
+}

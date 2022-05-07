@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data storage component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="title-section">
+            <img src="logo.svg" class="title-section__header">
+            <div class="title-section__files">
+                <div class="title-section__image">
+                    <img src="icon-document.svg" alt="icon-document">
+                </div>
+                <div class="title-section__image">
+                    <img src="icon-folder.svg" alt="icon-folder">
+                </div>
+                <div class="title-section__image">
+                    <img src="icon-upload.svg" alt="icon-upload">
+                </div>
+            </div>
+        </section>
+        <section class="data-section">
+            <p class="data-section__info">You've used <span class="data-section__info--span">815 GB</span> of your storage</p>
+            <div class="data-section__bar">
+                <div class="data-section__bar--inner"></div>
+            </div>
+            <div class="data-section__box">
+                <p class="data-left">185 <span class="data-left__span">GB LEFT</span></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
