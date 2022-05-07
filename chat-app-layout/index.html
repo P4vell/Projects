@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="container__phone">
+            <div class="container__phone--header">
+                <div class="header__profile">
+                    <img src="avatar.jpg" alt="avatar" class="header__image">
+                    <div class="header__info">
+                        <p class="header__info--name">Samuel Green</p>
+                        <p class="header__info--status">Available to Walk</p>
+                    </div>
+                </div>
+                <div class="header__dots">
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="container__phone--main">
+                <div class="message-box__left first">
+                    <p class="message-box__text">That's sounds great. I'd be happy to discuss more.</p>
+                </div>
+                <div class="message-box__left second">
+                    <p class="message-box__text">Could you send over some pictures of your dog, please?</p>
+                </div>
+                <div class="message-box__right images-box">
+                    <img src="dog-image-1.jpg" alt="dog-image-1" class="dog-image">
+                    <img src="dog-image-2.jpg" alt="dog-image-2" class="dog-image">
+                    <img src="dog-image-3.jpg" alt="dog-image-3" class="dog-image">
+                </div>
+                <div class="message-box__right first">
+                    <p class="message-box__text">Here are a few pictures. She's a happy girl!</p>
+                </div>
+                <div class="message-box__right second">
+                    <p class="message-box__text">Can you make it?</p>
+                </div>
+                <div class="message-box__left third">
+                    <p class="message-box__text">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                </div>
+                <div class="walk-option-1">
+                    <div class="walk-input"></div>
+                    <p class="walk-length">30 minute walk</p>
+                    <p class="walk-price">$29</p>
+                </div>
+                <div class="walk-option-2">
+                    <div class="walk-input"></div>
+                    <p class="walk-length">1 hour walk</p>
+                    <p class="walk-price">$49</p>
+                </div>
+                <div class="container__phone--footer">
+                    <p class="footer__placeholder">Type a message...</p>
+                    <button class="footer__button"><div class="arrow"></div></button>
+                </div>
+            </div>
+        </section>
+        <section class="container__info">
+            <h1 class="container__info--title">Simple booking</h1>
+            <p class="container__info--description">Stay in touch with our dog walkers through the chat interface. 
+                This makes it easy to discuss arrangements and make bookings. 
+                Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        </section>
+    </main>
+</body>
+</html>
