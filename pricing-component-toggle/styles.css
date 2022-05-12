@@ -93,7 +93,7 @@ header {
 }
 
 .active .toggle-btn {
-    transform: translate(2rem, -50%);
+    transform: translate(2.1rem, -50%);
 }
 
 main {
