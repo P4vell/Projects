@@ -1,1 +1,236 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Job Listing</title>
+</head>
+<body>
+    <div class="bg-header">
+        <picture>
+            <source srcset="./images/bg-header-desktop.svg" media="(min-width: 30rem") alt="bg-header"/>
+            <img src="./images/bg-header-mobile.svg" alt="bg-header-mobile" class="bg-header">
+        </picture>
+    </div>
+    <div class="filters">
+        <ul class="filters__list">
+        </ul>
+        <p class="filters__clear">Clear</p>
+    </div>
+    <section class="job-card featured" data-filter="Frontend Senior HTML CSS JavaScript">
+        <img src="./images/photosnap.svg" alt="photosnap-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Photosnap</p>
+                <p class="header__new-badge">NEW!</p>
+                <p class="header__featured-badge">FEATURED</p>
+            </div>
+            <p class="job__position">Senior Frontend Developer</p>
+            <ul class="job__info">
+                <li>1d ago</li>
+                <li>Full Time</li>
+                <li>USA Only</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Senior</div>
+            <div class="requirements__item">HTML</div>
+            <div class="requirements__item">CSS</div>
+            <div class="requirements__item">JavaScript</div>
+        </div>
+    </section>
+    <section class="job-card featured" data-filter="Fullstack Midweight Python React">
+        <img src="./images/manage.svg" alt="manage-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Manage</p>
+                <p class="header__new-badge">NEW!</p>
+                <p class="header__featured-badge">FEATURED</p>
+            </div>
+            <p class="job__position">Fullstack Developer</p>
+            <ul class="job__info">
+                <li>1d ago</li>
+                <li>Part Time</li>
+                <li>Remote</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Fullstack</div>
+            <div class="requirements__item">Midweight</div>
+            <div class="requirements__item">Python</div>
+            <div class="requirements__item">React</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Frontend Junior React Sass JavaScript">
+        <img src="./images/account.svg" alt="account-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Account</p>
+                <p class="header__new-badge">NEW!</p>
+            </div>
+            <p class="job__position">Junior Frontend Developer</p>
+            <ul class="job__info">
+                <li>2d ago</li>
+                <li>Part Time</li>
+                <li>USA Only</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">React</div>
+            <div class="requirements__item">Sass</div>
+            <div class="requirements__item">JavaScript</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Frontend Junior CSS JavaScript">
+        <img src="./images/myhome.svg" alt="myhome-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">MyHome</p>
+            </div>
+            <p class="job__position">Junior Frontend Developer</p>
+            <ul class="job__info">
+                <li>5d ago</li>
+                <li>Contract</li>
+                <li>USA Only</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">CSS</div>
+            <div class="requirements__item">JavaScript</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Fullstack Midweight Javascript Sass Ruby">
+        <img src="./images/loop-studios.svg" alt="loopstudios-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Loop Studios</p>
+            </div>
+            <p class="job__position">Software Engineer</p>
+            <ul class="job__info">
+                <li>1w ago</li>
+                <li>Full Time</li>
+                <li>Worldwide</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Fullstack</div>
+            <div class="requirements__item">Midweight</div>
+            <div class="requirements__item">JavaScript</div>
+            <div class="requirements__item">Sass</div>
+            <div class="requirements__item">Ruby</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Backend Junior Ruby RoR">
+        <img src="./images/faceit.svg" alt="faceit-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">FaceIt</p>
+            </div>
+            <p class="job__position">Junior Backend Developer</p>
+            <ul class="job__info">
+                <li>2w ago</li>
+                <li>Full Time</li>
+                <li>UK Only</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Backend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">Ruby</div>
+            <div class="requirements__item">RoR</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Frontend Junior HTML Sass JavaScript">
+        <img src="./images/shortly.svg" alt="shortly-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Shortly</p>
+            </div>
+            <p class="job__position">Junior Developer</p>
+            <ul class="job__info">
+                <li>2w ago</li>
+                <li>Full Time</li>
+                <li>Worldwide</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">HTML</div>
+            <div class="requirements__item">Sass</div>
+            <div class="requirements__item">JavaScript</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Frontend Junior Vue Sass JavaScript">
+        <img src="./images/insure.svg" alt="insure-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Insure</p>
+            </div>
+            <p class="job__position">Junior Frontend Developer</p>
+            <ul class="job__info">
+                <li>2w ago</li>
+                <li>Full Time</li>
+                <li>USA Only</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">Vue</div>
+            <div class="requirements__item">JavaScript</div>
+            <div class="requirements__item">Sass</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Fullstack Midweight Javascript Django Python">
+        <img src="./images/eyecam-co.svg" alt="eyecam-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">Eyecam Co.</p>
+            </div>
+            <p class="job__position">Full Stack Engineer</p>
+            <ul class="job__info">
+                <li>3w ago</li>
+                <li>Full Time</li>
+                <li>Worldwide</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Fullstack</div>
+            <div class="requirements__item">Midweight</div>
+            <div class="requirements__item">JavaScript</div>
+            <div class="requirements__item">Django</div>
+            <div class="requirements__item">Python</div>
+        </div>
+    </section>
+    <section class="job-card" data-filter="Frontend Junior React Sass JavaScript">
+        <img src="./images/the-air-filter-company.svg" alt="loopstudios-img" class="job__image">
+        <div class="job__description">
+            <div class="job__header">
+                <p class="header__company-name">The Air Filter Company</p>
+            </div>
+            <p class="job__position">Front-end Dev</p>
+            <ul class="job__info">
+                <li>1mo ago</li>
+                <li>Part Time</li>
+                <li>Worldwide</li>
+            </ul>
+        </div>
+        <div class="job__requirements">
+            <div class="requirements__item">Frontend</div>
+            <div class="requirements__item">Junior</div>
+            <div class="requirements__item">React</div>
+            <div class="requirements__item">Sass</div>
+            <div class="requirements__item">JavaScript</div>
+        </div>
+    </section>
+</body>
+</html>
