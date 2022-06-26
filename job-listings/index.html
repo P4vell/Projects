@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Job listing App</title>
+</head>
+<body>
+    <template class="template__job-offer">
+        <article class="job-offer">
+            <div>
+                <img src="" alt="job-image" class="job-offer__image">
+                <div class="job-offer__header">
+                    <p class="header__company-name"></p>
+                    <div class="header__new-badge">NEW!</div>
+                    <div class="header__featured-badge">FEATURED</div>
+                </div>
+                <p class="job-offer__position"></p>
+                <ul class="job-offer__info">
+                    <li class="info__date"></li>
+                    <li class="info__contract"></li>
+                    <li class="info__location"></li>
+                </ul>
+            </div>
+            <div class="job-offer__filters">
+                <button class="filters__role filter"></button>
+                <button class="filters__level filter"></button>
+            </div>
+        </article>
+    </template>
+    <template class="template__filter-btn">
+        <div class="buttons__filter">
+            <p class="buttons__filter-value"></p>
+            <button class="buttons__filter-remove">
+                <img src="./images/icon-remove.svg" alt="remove-icon">
+            </button>
+        </div>
+    </template>
+    <picture>
+        <source media="(min-width:30rem)" srcset="./images/bg-header-desktop.svg">
+        <img src="./images/bg-header-mobile.svg" alt="bg-header">
+    </picture>
+    <section class="filters-display">
+        <div class="filters-display__buttons"></div>
+        <button class="filters-display__clear">Clear</button>
+    </section>
+</body>
+</html>
